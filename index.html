@@ -24,14 +24,7 @@
     <div class="box">
         <p class="tfx bigger">Now playing</p>
         <div class="subbox centered">
-            <p id="nowplaying"></p>
-        </div>
-        <small class="centered">(powered by last.fm and a REST API wrapper I'm making)</small>
-    </div>
-    <div class="box">
-        <p class="tfx bigger">Blog (RU)</p>
-        <div class="subbox centered">
-            <a href="/blog">/blog</a>
+            <p id="nowplaying">Unavailable</p>
         </div>
     </div>
     <div class="box">
@@ -55,7 +48,7 @@
     <div class="box">
         <p class="tfx bigger">Other things</p>
         <div class="subbox">
-            <p class="chip"><a href="/slskfiles">Soulseek account: eldritchT (click to download any file I share)</a></p>
+            <p class="chip">Soulseek account: eldritchT</p>
         </div>
     </div>
     <div class="centered banners">
@@ -76,13 +69,6 @@
         </a>
     </div>
     <nav class="centered">This page is also reachable over: <a href="http://[21d:743f:25ef:4be4:5f96:9ef5:d67a:ce55]">yggdrasil</a>; <a href="https://tgtube.ru/">clearnet (temporarily not working)</a></nav>
-    <script src="/res/shared.min.js"></script>
-    <script src="/res/nowplaying.js"></script>
-    <script>
-        async function main() {
-            await showPlaying($("nowplaying"))
-        }
-    </script>
 </body>
 
 </html>
