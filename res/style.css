@@ -1,0 +1,302 @@
+@font-face {
+    font-family: 'Proggy';
+    src: url('/res/proggycleansz.ttf');
+}
+
+@font-face {
+    font-family: 'RetroComputer';
+    src: url('/res/retrocomputer.ttf');
+}
+
+
+@keyframes body-hue {
+    from {
+        background-color: #faa;
+    }
+
+    16.7% {
+        background-color: #ffa;
+    }
+
+    33.3% {
+        background-color: #afa;
+    }
+
+    50% {
+        background-color: #aff;
+    }
+
+    66.7% {
+        background-color: #aaf;
+    }
+
+    83.3% {
+        background-color: #faf;
+    }
+
+    to {
+        background-color: #faa;
+    }
+}
+
+@keyframes text-hue {
+    from {
+        color: #faa;
+    }
+
+    16.7% {
+        color: #ffa;
+    }
+
+    33.3% {
+        color: #afa;
+    }
+
+    50% {
+        color: #aff;
+    }
+
+    66.7% {
+        color: #aaf;
+    }
+
+    83.3% {
+        color: #faf;
+    }
+
+    to {
+        color: #faa;
+    }
+}
+
+@keyframes movingglow {
+    from {
+        text-shadow:
+            0px 0px #00ffff88;
+    }
+
+    16.7% {
+        text-shadow:
+            1px 1px #00ffff88;
+    }
+
+    33.3% {
+        text-shadow:
+            3px 3px #00ffff88;
+    }
+
+    50% {
+        text-shadow:
+            5px 5px #00ffff88;
+    }
+
+    66.7% {
+        text-shadow:
+            3px 3px #00ffff88;
+    }
+
+    83.3% {
+        text-shadow:
+            1px 1px #00ffff88;
+    }
+
+    to {
+        text-shadow:
+            0px 0px #00ffff88;
+    }
+}
+
+@keyframes tfx-color {
+    from {
+        text-shadow:
+            2px 2px #00ffff44,
+            -2px -2px #ff000044;
+    }
+
+    16.7% {
+        text-shadow:
+            3px 3px #00ffff66,
+            -3px -3px #ff000066;
+    }
+
+    33.3% {
+        text-shadow:
+            4px 4px #00ffff88,
+            -4px -4px #ff000088;
+    }
+
+    50% {
+        text-shadow:
+            5px 5px #00ffffaa,
+            -5px -5px #ff0000aa;
+    }
+
+    66.7% {
+        text-shadow:
+            4px 4px #00ffff88,
+            -4px -4px #ff000088;
+    }
+
+    83.3% {
+        text-shadow:
+            3px 3px #00ffff66,
+            -3px -3px #ff000066;
+    }
+
+    to {
+        text-shadow:
+            2px 2px #00ffff44,
+            -2px -2px #ff000044;
+    }
+}
+
+@keyframes bfx-color {
+    from {
+        box-shadow:
+            2px 0px #00ffff44,
+            -2px 0px #ff000044;
+    }
+
+    16.7% {
+        box-shadow:
+            2px 0px #00ffff66,
+            -2px 0px #ff000066;
+    }
+
+    33.3% {
+        box-shadow:
+            2px 0px #00ffff88,
+            -2px 0px #ff000088;
+    }
+
+    50% {
+        box-shadow:
+            2px 0px #00ffffaa,
+            -2px 0px #ff0000aa;
+    }
+
+    66.7% {
+        box-shadow:
+            2px 0px #00ffff88,
+            -2px 0px #ff000088;
+    }
+
+    83.3% {
+        box-shadow:
+            2px 0px #00ffff66,
+            -2px 0px #ff000066;
+    }
+
+    to {
+        box-shadow:
+            2px 0px #00ffff44,
+            -2px 0px #ff000044;
+    }
+}
+
+.tfx {
+    font-family: 'RetroComputer';
+    text-shadow:
+        2px 2px #00ffff44,
+        -2px -2px #ff000044;
+    animation:
+        tfx-color 6s linear infinite,
+        text-hue 6s linear infinite;
+}
+
+.bfx {
+    box-shadow:
+        2px 0px #00ffff44,
+        -2px 0px #ff000044;
+    animation: bfx-color 6s linear infinite;
+}
+
+.bigger {
+    font-size: 24px;
+}
+
+.biggest {
+    font-size: 36px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered p {
+    align-items: center;
+}
+
+.banners img {
+    width: 88px;
+    height: 31px;
+}
+
+.emoji {
+    width: 32px;
+    vertical-align: middle;
+    display: inline;
+}
+
+.chip {
+    border: 2px solid #ffffff33;
+    border-radius: 2px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.box {
+    border: 2px solid #ffffff33;
+    border-radius: 2px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.subbox {
+    border: 2px solid #ffffff33;
+    border-radius: 2px;
+    padding: 3px;
+    margin: 3px;
+    overflow: auto;
+    max-height: 200px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #00000000;
+    border: 2px solid #ffffffaa;
+    color: inherit
+}
+
+body {
+    background-image: url('/img/background.png'), url('noise.svg'), linear-gradient(45deg,
+            #2da85a,
+            #bb00ff), linear-gradient(45deg,
+            #ffffff,
+            #80ff80);
+    background-blend-mode: multiply;
+    animation: body-hue 6s linear infinite;
+    color: white;
+    font-family: 'Proggy';
+    font-size: 20px;
+    background-attachment: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+li::marker {
+    content: "- ";
+    font-size: 20px;
+}
+
+small {
+    font-size: 15px;
+}

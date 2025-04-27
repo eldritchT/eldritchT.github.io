@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Proggy';
+    src: url('/proggyvector.ttf');
+}
+
+@keyframes body-hue {
+    from {
+        background-color: #faa;
+    }
+
+    16.7% {
+        background-color: #ffa;
+    }
+
+    33.3% {
+        background-color: #afa;
+    }
+
+    50% {
+        background-color: #aff;
+    }
+
+    66.7% {
+        background-color: #aaf;
+    }
+
+    83.3% {
+        background-color: #faf;
+    }
+
+    to {
+        background-color: #faa;
+    }
+}
+
+@keyframes tfx-color {
+    from {
+        text-shadow:
+            2px 0px #00ffff44,
+            -2px 0px #ff000044;
+    }
+
+    16.7% {
+        text-shadow:
+            2px 0px #00ffff66,
+            -2px 0px #ff000066;
+    }
+
+    33.3% {
+        text-shadow:
+            2px 0px #00ffff88,
+            -2px 0px #ff000088;
+    }
+
+    50% {
+        text-shadow:
+            2px 0px #00ffffaa,
+            -2px 0px #ff0000aa;
+    }
+
+    66.7% {
+        text-shadow:
+            2px 0px #00ffff88,
+            -2px 0px #ff000088;
+    }
+
+    83.3% {
+        text-shadow:
+            2px 0px #00ffff66,
+            -2px 0px #ff000066;
+    }
+
+    to {
+        text-shadow:
+            2px 0px #00ffff44,
+            -2px 0px #ff000044;
+    }
+}
+
+@keyframes bfx-color {
+    from {
+        box-shadow:
+            2px 0px #00ffff44,
+            -2px 0px #ff000044;
+    }
+
+    16.7% {
+        box-shadow:
+            2px 0px #00ffff66,
+            -2px 0px #ff000066;
+    }
+
+    33.3% {
+        box-shadow:
+            2px 0px #00ffff88,
+            -2px 0px #ff000088;
+    }
+
+    50% {
+        box-shadow:
+            2px 0px #00ffffaa,
+            -2px 0px #ff0000aa;
+    }
+
+    66.7% {
+        box-shadow:
+            2px 0px #00ffff88,
+            -2px 0px #ff000088;
+    }
+
+    83.3% {
+        box-shadow:
+            2px 0px #00ffff66,
+            -2px 0px #ff000066;
+    }
+
+    to {
+        box-shadow:
+            2px 0px #00ffff44,
+            -2px 0px #ff000044;
+    }
+}
+
+.tfx {
+    text-shadow:
+        2px 0px #00ffff44,
+        -2px 0px #ff000044;
+    animation: tfx-color 6s linear infinite;
+}
+
+.bfx {
+    box-shadow:
+        2px 0px #00ffff44,
+        -2px 0px #ff000044;
+    animation: bfx-color 6s linear infinite;
+}
+
+.bigger {
+    font-size: 24px;
+}
+
+.biggest {
+    font-size: 36px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.banners img {
+    width: 88px;
+    height: 31px;
+}
+.chip {
+    border: 2px solid #ffffff33;
+    border-radius: 2px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.box {
+    border: 2px solid #ffffff33;
+    border-radius: 2px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.subbox {
+    border: 2px solid #ffffff33;
+    border-radius: 2px;
+    padding: 3px;
+    margin: 3px;
+    overflow: auto;
+    max-height: 200px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #00000000;
+    border: 2px solid #ffffffaa;
+    color: inherit
+}
+
+body {
+    /* background-image: url('/img/background.png'), linear-gradient(45deg,
+            #2da85a,
+            #bb00ff), linear-gradient(45deg,
+            #ffffff,
+            #80ff80); */
+    background-color: #aff;
+    background-blend-mode: multiply;
+    animation: body-hue 6s linear infinite;
+    color: black;
+    font-family: 'Proggy';
+    font-size: 20px;
+    background-attachment: local, fixed, fixed;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+li::marker {
+    content: "- ";
+    font-size: 20px;
+}
+
+small {
+    font-size: 15px;
+}
