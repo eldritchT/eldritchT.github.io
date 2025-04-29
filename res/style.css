@@ -232,6 +232,14 @@
     height: 31px;
 }
 
+.banners p {
+    margin: 5px;
+}
+
+.small-margin {
+    margin: 5px;
+}
+
 .emoji {
     width: 32px;
     vertical-align: middle;
