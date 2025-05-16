@@ -22,17 +22,16 @@
             <a href="https://blog.dymka.pics/">#dymka4eva <img class="emoji" src="/res/dymka.png" alt="Дымка :3"></a>
         </p>
     </div>
-    <!--
     <div class="box">
         <p class="tfx bigger">Now playing</p>
         <div class="subbox centered">
-            <p id="nowplaying">Unavailable</p>
+            <p id="nowplaying"></p>
         </div>
     </div>
-    -->
     <div class="box">
         <p class="tfx bigger">Links</p>
         <div class="subbox">
+            <p class="chip"><a href="https://ovk.to/eldritcht">OpenVK</a></p>
             <p class="chip"><a href="https://discordapp.com/users/904675087779762187">Discord</a></p>
             <p class="chip"><a href="https://mastodon.ml/@eldritchT">Fediverse (mastodon.ml)</a></p>
             <p class="chip"><a href="https://en.pronouns.page/@eldritchT">pronouns.page</a></p>
@@ -111,6 +110,13 @@
         This page is reachable on: 
         <a href="http://[21d:743f:25ef:4be4:5f96:9ef5:d67a:ce55]">yggdrasil (ip)</a>; 
         <a href="http://eldritch.ygg">yggdrasil (alfis)</a>; <a href="http://aioxipzf55f6ix4wt325m6woku.meship">yggdrasil (meship)</a></nav>
+    <script src="/res/shared.min.js"></script>
+    <script src="/res/nowplaying.js"></script>
+    <script>
+        async function main() {
+            await showPlaying($("nowplaying"))
+        }
+    </script>   
 </body>
 
 </html>

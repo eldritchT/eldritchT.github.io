@@ -4,7 +4,7 @@ function geturl() {
     } else {
         return "https://media-api.tgtube.ru"
     } */
-   return "/api/media"
+   return "https://eldritch.myic0n.netcraze.link/api/media"
 }
 
 async function showPlaying(output) {
