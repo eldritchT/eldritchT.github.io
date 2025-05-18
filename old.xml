@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet type="text/xsl" href="old.xsl" ?>
 <content>
-    <persona>
-        <persona:name>eldritchT</persona:name>
-    </persona>
     <body>
         <heading>eldritchT's homepage</heading>
     </body>
