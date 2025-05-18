@@ -3,5 +3,9 @@
 <content>
     <body>
         <heading>eldritchT's homepage</heading>
+        <box>
+            <box-heading>Box heading</box-heading>
+            <box-content>Box content</box-content>
+        </box>
     </body>
 </content>
