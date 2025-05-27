@@ -8,6 +8,10 @@
     src: url('/res/retrocomputer.ttf');
 }
 
+@font-face {
+    font-family: 'OMORI';
+    src: url('/res/omori.ttf');
+}
 
 @keyframes body-hue {
     from {
@@ -307,4 +311,19 @@ li::marker {
 
 small {
     font-size: 15px;
+}
+
+/* OMORI MENTIONED :speak::speak::speak::fire::fire::fire::fire: */
+
+.dialog-box {
+    border: 3px solid white;
+    background-color: black;
+    margin: 4px;
+    padding: 4px;
+    font-family: 'OMORI';
+    font-size: 24px;
+}
+
+.dialog-content {
+    margin: 1px;
 }
