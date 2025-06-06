@@ -36,6 +36,13 @@ async function loadLang(langCode) {
     let langData = await r(`../assets/langs/${langCode}.json`)
     if (langData != {}) {
         langs[langCode] = langData
+        for (let page of langData) {
+            let preload = document.createElement("link")
+            preload.href = `../assets/${page.img}`
+            preload.rel = 'preload'
+            preload.as = 'image'
+            document.head.appendChild(preload)
+        }
         return true
     } else {
         return false
