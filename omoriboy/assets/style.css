@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "OMORI";
+    src: url("./fonts/OMORI_GAME2.ttf");
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+.content {
+    font-family: 'OMORI';
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.center {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .center {
+        max-width: 100%;
+    }
+}
+
+#image {
+    object-fit: contain;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 700px;
+    max-height: 700px;
+    min-height: 700px;
+}
+
+.textbox-content {
+    font-size: 30px;
+    max-width: 500px;
+    max-height: 108px;
+    overflow-y: auto;
+}
+
+.textbox-line {
+    margin-bottom: 10px;
+}
+.textbox-date {
+    font-size: 25px;
+    opacity: 0.5;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 45px;
+    width: 60px;
+}
