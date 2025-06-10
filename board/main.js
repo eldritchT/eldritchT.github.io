@@ -29,7 +29,7 @@ function dateGetMonth(m) {
 }
 
 function getReadableDate(d) {
-    return `${dateGetMonth(d.getMonth())} ${d.getDate()} ${d.getHours()}:${d.getMinutes().toString().padStart(2, "0")}`
+    return `${dateGetMonth(d.getUTCMonth())} ${d.getUTCDate()} ${d.getHours()}:${d.getMinutes().toString().padStart(2, "0")}`
 }
 
 function generatePost(p) {
