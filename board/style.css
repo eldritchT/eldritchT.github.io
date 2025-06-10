@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(#000, #2d1d3f);
+    background-attachment: fixed;
+    color: #fff;
+    font-family: monospace;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    padding: 5px;
+    background: linear-gradient(#888, #000);
+}
+
+main {
+    padding: 5px;
+}
+
+section {
+    padding: 5px;
+    background-color: #20000f;
+}
+
+blockquote {
+    padding: 6px;
+    margin: 0;
+    border-left: 3px solid #555;
+    background: linear-gradient(#222, #111);
+    margin-bottom: 6px;
+}
+
+.post-subtitle {
+    color: #999;
+    vertical-align: middle;
+    margin-bottom: 12px;
+}
+
+.post-pfp {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
