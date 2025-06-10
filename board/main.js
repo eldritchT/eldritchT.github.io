@@ -32,7 +32,7 @@ function getReadableDate(d) {
     return `${dateGetMonth(d.getUTCMonth())} ${d.getUTCDate()} ${d.getHours()}:${d.getMinutes().toString().padStart(2, "0")}`
 }
 
-function generatePost(p) {
+function generatePost(p, idx) {
     let block = $("<blockquote></blockquote>")
     let subtitle = $("<p></p>")
     let content = $("<span></span>")
@@ -42,7 +42,7 @@ function generatePost(p) {
     if ('pic' in p.author) {
         pfp = `<img src="${p.author.pic}" class="post-pfp"></img>`
     }
-    let subtitleText = `${pfp}${p.author.name}, ${getReadableDate(postDate)}`
+    let subtitleText = `${pfp}${p.author.name}, ${getReadableDate(postDate)} id=${idx}`
     subtitle.addClass("post-subtitle")
     subtitle.html(subtitleText)
     block.append(subtitle)
@@ -56,7 +56,7 @@ async function loadPosts() {
         let response = await getPosts()
         flow.html("")
         for (let p of response.posts) {
-            flow.append(generatePost(p))
+            flow.append(generatePost(p, response.posts.indexOf(p)))
         }
     } catch (error) {
         flow.html("")
