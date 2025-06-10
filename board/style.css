@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(#000, #2d1d3f);
+    background: linear-gradient(#0d001d, #000000);
     background-attachment: fixed;
     color: #fff;
     font-family: monospace;
@@ -12,7 +12,7 @@ p {
 
 header {
     padding: 5px;
-    background: linear-gradient(#888, #000);
+    background: linear-gradient(#0a0a0a, #000);
 }
 
 main {
@@ -21,15 +21,24 @@ main {
 
 section {
     padding: 5px;
-    background-color: #20000f;
+    background-color: #0b0020;
 }
 
 blockquote {
     padding: 6px;
     margin: 0;
     border-left: 3px solid #555;
-    background: linear-gradient(#222, #111);
+    background-color: #111;
     margin-bottom: 6px;
+}
+
+blockquote a {
+    text-decoration: none;
+    color: inherit;
+}
+
+blockquote a:hover {
+    text-decoration: underline;
 }
 
 .post-subtitle {
@@ -43,4 +52,9 @@ blockquote {
     height: 32px;
     margin-right: 8px;
     vertical-align: middle;
+}
+
+.post-content a {
+    text-decoration: underline;
+    color: inherit;
 }
