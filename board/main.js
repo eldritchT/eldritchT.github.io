@@ -71,6 +71,17 @@ function generatePost(p, idx, brief) {
             let linkedPost = blogData.posts[p.linkedPost]
             block.append(generatePost(linkedPost, p.linkedPost, true))
         }
+        if ('attachment' in p) {
+            for (let att of p.attachment) {
+                console.log(att)
+                if (att.type == "image") {
+                    let img = $("<img>")
+                    img.attr("src", att.source.replaceAll("uploads://", postApiUrl + "/uploads"))
+                    content.append($("<br />"))
+                    content.append(img)
+                }
+            }
+        }
     }
     content.addClass("post-content")
     block.append(content)

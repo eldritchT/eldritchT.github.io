@@ -41,6 +41,10 @@ blockquote a:hover {
     text-decoration: underline;
 }
 
+blockquote img {
+    max-width: 400px;
+}
+
 .post-subtitle {
     color: #999;
     vertical-align: middle;
