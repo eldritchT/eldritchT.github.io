@@ -42,7 +42,13 @@ blockquote a:hover {
 }
 
 blockquote img {
-    max-width: 400px;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    blockquote img {
+        max-width: 400px;
+    }
 }
 
 .post-subtitle {
