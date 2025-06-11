@@ -105,7 +105,7 @@ async function loadPosts() {
         for (let p of response.posts) {
             let generatedPost = generatePost(p, response.posts.indexOf(p))
             if (generatedPost) {
-                flow.append(generatedPost)
+                flow.prepend(generatedPost)
             }
         }
     } catch (error) {
