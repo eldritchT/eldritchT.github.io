@@ -80,6 +80,12 @@ function generatePost(p, idx, brief) {
                     content.append($("<br />"))
                     content.append(img)
                 }
+                if (att.type == "audio") {
+                    let aud = $("<audio>")
+                    aud.attr("src", att.source.replaceAll("uploads://", postApiUrl + "/uploads"))
+                    content.append($("<br />"))
+                    content.append(aud)
+                }
             }
         }
     }
