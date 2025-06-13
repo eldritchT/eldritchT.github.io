@@ -102,6 +102,22 @@ function generatePost(p, idx, brief) {
                     }
                     content.append($("<br />"))
                     content.append($("<br />"))
+                    if ('metadata' in att) {
+                        let md = $("<p></p>")
+                        let readableMd = ""
+                        if ('artist' in att.metadata) {
+                            readableMd += `${att.metadata.artist} - `
+                        }
+                        if ('title' in att.metadata) {
+                            readableMd += `${att.metadata.title}`
+                        }
+                        if (readableMd != "") {
+                            content.append($("<br />"))
+                            content.append($("<br />"))
+                            md.html(`<b>${readableMd}</b>`)
+                            content.append(md)
+                        }
+                    }
                     content.append(attElem)
                 }
             }
