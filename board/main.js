@@ -88,7 +88,18 @@ function generatePost(p, idx, brief) {
                     attElem.html(`<b>Unsupported attachment</b>`)
                 }
                 if ('source' in att) {
-                    attElem.attr("src", att.source.replaceAll("uploads://", postApiUrl + "/uploads"))
+                    let source = att.source.replaceAll("uploads://", postApiUrl + "/uploads")
+                    if ('spoiler' in att & att.spoiler == true) {
+                        attElem = $("<a></a>")
+                        attElem.attr("href", source)
+                        if ('spoilerText' in att) {
+                            attElem.html(att.spoilerText)
+                        } else {
+                            attElem.text(`This upload may contain spoilers, view at your own risk [click]`)
+                        }
+                    } else {
+                        attElem.attr("src", source)
+                    }
                     content.append($("<br />"))
                     content.append($("<br />"))
                     content.append(attElem)
