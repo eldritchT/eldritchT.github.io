@@ -73,30 +73,32 @@ function generatePost(p, idx, brief) {
         }
         if ('attachment' in p) {
             for (let att of p.attachment) {
-                console.log(att)
+                // console.log(att)
+                let attElem
                 if (att.type == "image") {
-                    let img = $("<img>")
-                    img.attr("src", att.source.replaceAll("uploads://", postApiUrl + "/uploads"))
-                    content.append($("<br />"))
-                    content.append(img)
+                    attElem = $("<img>")
                 } else if (att.type == "audio") {
-                    let aud = $("<audio>")
-                    aud.attr("src", att.source.replaceAll("uploads://", postApiUrl + "/uploads"))
-                    aud.prop("controls", true)
-                    content.append($("<br />"))
-                    content.append(aud)
+                    attElem = $("<audio>")
+                    attElem.prop("controls", true)
+                } else if (att.type == "video") {
+                    attElem = $("<video>")
+                    attElem.prop("controls", true)
                 } else {
-                    let unsup = $("<p></p>")
-                    unsup.html(`<b>Unsupported attachment</b>`)
+                    attElem = $("<blockquote></blockquote>")
+                    attElem.html(`<b>Unsupported attachment</b>`)
+                }
+                if ('source' in att) {
+                    attElem.attr("src", att.source.replaceAll("uploads://", postApiUrl + "/uploads"))
                     content.append($("<br />"))
-                    content.append(unsup)
+                    content.append($("<br />"))
+                    content.append(attElem)
                 }
             }
         }
+        block.attr("id", `p${idx}`)
     }
     content.addClass("post-content")
     block.append(content)
-    block.attr("id", `p${idx}`)
     return block
 }
 

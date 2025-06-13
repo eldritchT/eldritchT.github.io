@@ -45,8 +45,15 @@ blockquote img {
     max-width: 100%;
 }
 
+blockquote video {
+    max-width: 100%;
+}
+
 @media screen and (min-width: 500px) {
     blockquote img {
+        max-width: 400px;
+    }
+    blockquote video {
         max-width: 400px;
     }
 }
