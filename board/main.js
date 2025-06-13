@@ -100,8 +100,6 @@ function generatePost(p, idx, brief) {
                     } else {
                         attElem.attr("src", source)
                     }
-                    content.append($("<br />"))
-                    content.append($("<br />"))
                     if ('metadata' in att) {
                         let md = $("<p></p>")
                         let readableMd = ""
@@ -118,6 +116,8 @@ function generatePost(p, idx, brief) {
                             content.append(md)
                         }
                     }
+                    content.append($("<br />"))
+                    content.append($("<br />"))
                     content.append(attElem)
                 }
             }
