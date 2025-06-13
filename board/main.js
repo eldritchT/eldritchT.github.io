@@ -79,12 +79,17 @@ function generatePost(p, idx, brief) {
                     img.attr("src", att.source.replaceAll("uploads://", postApiUrl + "/uploads"))
                     content.append($("<br />"))
                     content.append(img)
-                }
-                if (att.type == "audio") {
+                } else if (att.type == "audio") {
                     let aud = $("<audio>")
                     aud.attr("src", att.source.replaceAll("uploads://", postApiUrl + "/uploads"))
+                    aud.prop("controls", true)
                     content.append($("<br />"))
                     content.append(aud)
+                } else {
+                    let unsup = $("<p></p>")
+                    unsup.html(`<b>Unsupported attachment</b>`)
+                    content.append($("<br />"))
+                    content.append(unsup)
                 }
             }
         }
