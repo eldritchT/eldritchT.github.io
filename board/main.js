@@ -117,7 +117,6 @@ function generatePost(p, idx, brief) {
                         }
                     }
                     content.append($("<br />"))
-                    content.append($("<br />"))
                     content.append(attElem)
                 }
             }
