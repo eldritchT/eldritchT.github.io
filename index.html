@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 
     <title>eldritchT</title>
-    <meta name="description" content="A human (?) being that loves software and hates these big tech companies">
+    <meta name="description" content="A human (?) being that loves software and hates being outside">
     <meta name="google" content="notranslate">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <link rel="me" href="https://mastodon.ml/@eldritchT">
 </head>
 
-<body onload="main()" class="fancybg">
+<body class="fancybg">
     <div class="centered">
         <p class="tfx biggest">eldritchT's Home Page</p>
         <p>
@@ -25,34 +25,62 @@
         </p>
     </div>
     <div class="box">
-        <p class="tfx bigger">Now playing</p>
-        <div class="subbox centered">
-            <p id="nowplaying"></p>
+        <p class="tfx bigger">Notice</p>
+        <div class="subbox">
+            <p class="centered">Almost all of my self-hosted web services are dead. Say thanks to Roskomnadzor.</p>
         </div>
+    </div>
+    <div class="box">
+        <p class="tfx bigger">Now playing</p>
+        <div class="dialog-box centered okay">
+            <p class="dialog-content">Everything is going to be okay... Everything is going to be okay... Everything is going to be okay... Everything is going to be okay...</p>
+        </div>
+        <p>Once upon a time, the name of the track I was listening to was shown here, but now my microservice that was responsible for this has stopped working due to stupid government censorship.</p>
     </div>
     <div class="box">
         <p class="tfx bigger">Links</p>
         <div class="subbox">
             <p class="chip"><a href="https://h-ikki.newgrounds.com/">Newgrounds</a></p>
-            <p class="chip"><a href="https://mastodon.ml/@eldritchT">Fediverse (mastodon.ml)</a></p>
-            <p class="chip"><a href="https://en.pronouns.page/@eldritchT">pronouns.page</a></p>
+            <p class="chip"><a href="https://steamcommunity.com/id/eldritch_T">Steam</a></p>
         </div>
     </div>
     <div class="box">
         <p class="tfx bigger">Things I like/interested in</p>
         <div class="subbox">
             <p class="chip">Animation</p>
-            <p class="chip">Drawing</p>
             <p class="chip">Electronic music</p>
-            <p class="chip">ENA (a really good webseries)</p>
-            <p class="chip">FOSS (free open source software)</p>
             <p class="chip">Games</p>
             <p class="chip">Linux</p>
-            <p class="chip">Making music</p>
-            <p class="chip">OMORI (the game)</p>
             <p class="chip">Programming</p>
         </div>
     </div>
+    <!--
+
+    == July 7, 2025; 2:44 AM GMT+3 =========================
+    i am ashamed of myself
+    
+    also please ignore how the js code of 
+    this website is a complete f###ing s##t 
+    because of how stupid i was when writing it first time
+
+    im just too lazy to rewrite it rn
+    
+
+    <div class="box">
+        <p class="tfx bigger">Skills</p>
+        <div class="subbox">
+            <p class="chip">Frontend (html, js, css)</p>
+            <p class="chip">Backend (python)</p>
+            <p class="chip">Desktop (electronjs, nodejs)</p>
+        </div>
+    </div>
+
+    i wont include this section until i rewrite 
+    all the JS code for this website from scratch
+    (or even the whole website idk)
+    =========================================================
+
+    -->
     <div class="box">
         <p class="tfx bigger">Badges</p>
         <div class="subbox">
@@ -62,9 +90,6 @@
                 </a>
                 <a href="https://lucida.to/">
                     <img src="/buttons/lucida.gif" alt="Lucida.to - music at the internet speed">
-                </a>
-                <a href="https://holinim.xyz">
-                    <img src="/buttons/hlnmxyz.png" alt="holinim.xyz">
                 </a>
                 <a href="https://myslivets.com">
                     <img src="/buttons/dm.png" alt="Daniel Myslivets">
@@ -105,14 +130,20 @@
             </p>
         </div>
     </div>
-    <nav class="centered">
-        <a href="/board" style="color: rgba(255, 255, 255, 0);">take a step into the unknown</a>
+    <nav class="centered" hidden>
+        <a href="/__for_SUNNY__.txt" style="color: rgba(255, 255, 255, 0);"></a>
+        <!--=`8F8/hS8LDfm14Dfol,DC9NKBOQ'q+CoD.AKY]//db0l+Eq78+EMI<ATVU"DJ()$AS>dqA0?/9FY5:!+Eq78DC9NKBllQH=`8F1Eb-A%+D5V2A0>i&EcZ/:/0Ikk:/4qE+A!\kDJs_AH#IgQEb-A%+D5V2A0>i&EcZ/:+UULXB5_^!+E1n4F)Pq=GAhV?A8Wc:+CoC5F)Po,FD,B+B-;#)CLnW1BOQ!8/hR-->
     </nav>
     <script src="/res/shared.min.js"></script>
     <script src="/res/nowplaying.js"></script>
     <script>
         async function main() {
-            await showPlaying($("nowplaying"))
+            // await showPlaying($("nowplaying"))
+            `
+            thx, roskomnadzor
+
+            /sarc
+            `
         }
     </script>   
 </body>
