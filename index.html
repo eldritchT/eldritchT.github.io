@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/res/style.css">
     <link rel="me" href="https://mastodon.ml/@eldritchT">
+
+    <script src="https://assets.eldritcht.ru/js/jquery-3.7.1.min.js"></script>
 </head>
 
 <body class="fancybg">
@@ -20,23 +22,26 @@
             Hi! This is my home page where all my interesting stuff and projects can be found.
         </p>
         <p>
-            <a hidden href="https://blog.dymka.pics/">#dymka4eva <img class="emoji" src="/res/dymka.png" alt="Дымка :3"></a>
-            <p>"Anything fun is just a distraction from how much the world actually sucks..." - Omori</p>
+            <a hidden href="https://blog.dymka.pics/">#dymka4eva <img class="emoji" src="/res/dymka.png"
+                    alt="Дымка :3"></a>
+        <p>"Anything fun is just a distraction from how much the world actually sucks..." - Omori</p>
         </p>
     </div>
     <div class="box">
         <p class="tfx bigger">Now playing</p>
-        <div class="dialog-box centered okay">
-            <p class="dialog-content">Everything is going to be okay... Everything is going to be okay... Everything is going to be okay... Everything is going to be okay...</p>
+        <div class="centered">
+            <div class="subbox">
+                <p id="nowPlaying"></p>
+            </div>
         </div>
-        <p>Once upon a time, there was a box with the name of music I was listening to, but now my microservice that was responsible for this has stopped working due to stupid government censorship.</p>
     </div>
     <div class="box">
         <p class="tfx bigger">Links</p>
         <div class="subbox">
             <p class="chip"><a href="https://last.fm/user/nee96">last.fm</a></p>
             <p class="chip"><a href="https://github.com/eldritchT">GitHub</a></p>
-            <p class="chip"><a href="https://keyoxide.org/aspe:keyoxide.org:OGQQ2JMAMHYVOC7XRDAGY3K6HI">Keyoxide profile</a></p>
+            <p class="chip"><a href="https://keyoxide.org/aspe:keyoxide.org:OGQQ2JMAMHYVOC7XRDAGY3K6HI">Keyoxide
+                    profile</a></p>
             <p class="chip"><a href="https://h-ikki.newgrounds.com/">Newgrounds</a></p>
             <p class="chip"><a href="https://steamcommunity.com/id/eldritch_T">Steam</a></p>
         </div>
@@ -102,6 +107,8 @@
         <a href="/__for_SUNNY__.txt" style="color: rgba(255, 255, 255, 0);"></a>
         <!--=`8F8/hS8LDfm14Dfol,DC9NKBOQ'q+CoD.AKY]//db0l+Eq78+EMI<ATVU"DJ()$AS>dqA0?/9FY5:!+Eq78DC9NKBllQH=`8F1Eb-A%+D5V2A0>i&EcZ/:/0Ikk:/4qE+A!\kDJs_AH#IgQEb-A%+D5V2A0>i&EcZ/:+UULXB5_^!+E1n4F)Pq=GAhV?A8Wc:+CoC5F)Po,FD,B+B-;#)CLnW1BOQ!8/hR-->
     </nav>
+    <script src="/res/libnowplaying.js"></script>
+    <script src="/res/main.js"></script>
 </body>
 
 </html>
