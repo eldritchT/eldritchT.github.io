@@ -7,7 +7,7 @@
     Don't end this dreaming
 */
 
-const postApiUrl = "https://eldritch.myic0n.netcraze.link/blogboard"
+const postApiUrl = "https://assets.eldritcht.ru/blogboard"
 var blogData
 
 async function r(url, options) {
