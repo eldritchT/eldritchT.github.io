@@ -1,0 +1,103 @@
+@keyframes body-hue {
+    from {
+        background-color: #faa;
+    }
+
+    16.7% {
+        background-color: #ffa;
+    }
+
+    33.3% {
+        background-color: #afa;
+    }
+
+    50% {
+        background-color: #aff;
+    }
+
+    66.7% {
+        background-color: #aaf;
+    }
+
+    83.3% {
+        background-color: #faf;
+    }
+
+    to {
+        background-color: #faa;
+    }
+}
+
+@keyframes text-hue {
+    from {
+        color: #faa;
+    }
+
+    16.7% {
+        color: #ffa;
+    }
+
+    33.3% {
+        color: #afa;
+    }
+
+    50% {
+        color: #aff;
+    }
+
+    66.7% {
+        color: #aaf;
+    }
+
+    83.3% {
+        color: #faf;
+    }
+
+    to {
+        color: #faa;
+    }
+}
+
+@keyframes text-glow {
+    from {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.253);
+    }
+
+    50% {
+        text-shadow: 0 0 15px rgb(255, 255, 255, 0.253);
+    }
+
+    to {
+        text-shadow: 0 0 5px rgb(255, 255, 255, 0.253);
+    }
+}
+
+@keyframes text-crazy {
+    from {
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.75);
+    }
+
+    25% {
+        text-shadow: 1px 0 1px rgb(255, 255, 255, 0.75);
+    }
+
+    50% {
+        text-shadow: 1px 1px 1px rgb(255, 255, 255, 0.75);
+    }
+
+    to {
+        text-shadow: 0 1px 1px rgb(255, 255, 255, 0.75);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

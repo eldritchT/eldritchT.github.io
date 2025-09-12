@@ -1,126 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
 
     <title>eldritchT</title>
-    <meta name="description" content="A human (?) being that loves software and hates being outside">
+    <meta name="description" content="i enjoy creating software">
     <meta name="google" content="notranslate">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/res/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="me" href="https://mastodon.ml/@eldritchT">
-
-    <script src="https://assets.eldritcht.ru/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery-3.7.1.min.js"></script>
 </head>
 
-<body class="fancybg">
-    <div class="centered">
-        <p class="tfx biggest">eldritchT's Home Page</p>
-        <p>
-            Hi! This is my home page where all my interesting stuff and projects can be found.
-        </p>
-        <p>
-            <a hidden href="https://blog.dymka.pics/">#dymka4eva <img class="emoji" src="/res/dymka.png"
-                    alt="Дымка :3"></a>
-        <p>"Anything fun is just a distraction from how much the world actually sucks..." - Omori</p>
-        </p>
-    </div>
-    <div class="box">
-        <p class="tfx bigger">Now playing</p>
-        <div class="centered">
-            <div class="subbox">
-                <p id="nowPlaying"></p>
-            </div>
+<body>
+    <main>
+        <div class="ui-box ui-text-centered glass">
+            <p class="ui-text-site-header-title">eldritchT's homepage</p>
         </div>
-    </div>
-    <div class="box">
-        <p class="tfx bigger">Links</p>
-        <div class="subbox">
-            <p class="chip"><a href="https://last.fm/user/nee96">last.fm</a></p>
-            <p class="chip"><a href="https://github.com/eldritchT">GitHub</a></p>
-            <p class="chip"><a href="https://keyoxide.org/aspe:keyoxide.org:OGQQ2JMAMHYVOC7XRDAGY3K6HI">Keyoxide
-                    profile</a></p>
-            <p class="chip"><a href="https://h-ikki.newgrounds.com/">Newgrounds</a></p>
-            <p class="chip"><a href="https://steamcommunity.com/id/eldritch_T">Steam</a></p>
+
+        <div class="ui-box glass">
+            <p class="ui-text-header-title">favorite quote</p>
+            <p class="ui-text-site-header-subtitle"><i>anything fun is just a distraction from how much the world
+                    actually sucks</i><br /><br />– Omori </p>
         </div>
-    </div>
-    <div class="box">
-        <p class="tfx bigger">Things I like/interested in</p>
-        <div class="subbox">
-            <p class="chip">Animation</p>
-            <p class="chip">Electronic music</p>
-            <p class="chip">Games</p>
-            <p class="chip">Linux</p>
-            <p class="chip">Programming</p>
+
+        <div class="ui-box glass">
+            <p class="ui-text-header-title">media</p>
+            <nav class="ui-text-header-subtitle ui-margin-small ui-button-list">
+                <a href="https://github.com/eldritchT" class="glass ui-animated ui-button">github</a>
+                <a href="https://last.fm/user/nee96" class="glass ui-animated ui-button">last.fm</a>
+                <a href="https://steamcommunity.com/id/eldritch_T" class="glass ui-animated ui-button">steam</a>
+            </nav>
         </div>
-    </div>
-    <div class="dialog-box">
-        <p class="dialog-content" style="font-size: 30px;">DAY ???</p>
-        <p class="dialog-content">Today, I spent time in White Space. Everything was okay.</p>
-    </div>
-    <div class="box">
-        <p class="tfx bigger">Badges</p>
-        <div class="subbox">
-            <div class="centered banners">
-                <a href="https://eldritcht.fsky.io">
-                    <img src="/buttons/eldritcht.png" alt="eldritchT's Home page">
+
+        <div class="ui-box glass">
+            <p class="ui-text-header-title">projects</p>
+            <nav class="ui-text-header-subtitle ui-button-list">
+                <a href="https://h-ikki.bandcamp.com" class="glass ui-animated ui-button">h_ikki</a>
+                <p class="ui-text-header-subtitle">sometimes i make music</p>
+                <a href="https://fourpath.itch.io/cavespace" class="glass ui-animated ui-button">cavespace</a>
+                <p class="ui-text-header-subtitle">my experiment of creating a y2k-ish looking game</p>
+            </nav>
+        </div>
+
+        <div class="ui-box glass">
+            <p class="ui-text-header-title">interests</p>
+            <nav class="ui-text-header-subtitle ui-margin-small ui-button-list">
+                <span class="glass ui-button">animation</span>
+                <span class="glass ui-button">games</span>
+                <span class="glass ui-button">music</span>
+                <span class="glass ui-button">programming</span>
+            </nav>
+        </div>
+
+        <div class="ui-box glass">
+            <p class="ui-text-header-title">buttons</p>
+            <div class="ui-badgelist ui-text-centered">
+                <a href="https://eldritcht.fsky.io/">
+                    <img src="/img/eldritcht.gif" alt="eldritchT's homepage">
                 </a>
+                <!--
                 <a href="https://www.youtube.com/watch?v=BszzhPG6Ltw">
-                    <img src="/buttons/galareteg.gif" alt="You like web buttons, don't you? :3">
+                    <img src="https://assets.eldritcht.ru/buttons/galareteg.gif"
+                        alt="You like web buttons, don't you? :3">
                 </a>
+                -->
                 <a href="https://fsky.io">
-                    <img src="/buttons/fsky.webp" alt="FSKY (huge props for hosting :heart:)">
+                    <img src="/img/fsky.gif" alt="FSKY (huge props for hosting :heart:)">
                 </a>
                 <a href="https://mozilla.org/en-US/firefox">
-                    <img src="/buttons/firefox.png" alt="Firefox">
+                    <img src="/img/firefox.png" alt="Firefox">
                 </a>
-                <a href="https://yggdrasil-network.github.io">
-                    <img src="/buttons/yggdrasil.png" alt="Yggdrasil Network">
-                </a>
-                <a href="https://modarchive.org/">
-                    <img src="/buttons/modarchive.gif" alt="The Mod Archive">
-                </a>
-                <a href="https://www.omori-game.com">
-                    <img src="/buttons/omori.gif" alt="OMORI">
-                </a>
-                <a href="https://archive.org">
-                    <img src="/buttons/archive.gif" alt="Archive">
-                </a>
-                <a href="https://notepad-plus-plus.org">
-                    <img src="/buttons/nppp.gif" alt="Made with Notepad++">
-                </a>
-                <a href="https://m1cro.su">
-                    <img src="/buttons/m1cro_button.png" alt="m1cro_cat">
-                </a>
-
-                <!--
-                <a href="https://kskkbio.konataizumi.ru">
-                    <img src="/buttons/kskkb.png" alt="kskk">
-                </a>
-                fuk u kskk
-                -->
-
-                <a href="https://mikeklubnika.com">
-                    <img src="/buttons/mikeklubnika.gif" alt="Mike Klubnika">
-                </a>
-                <a href="https://eldritcht.ru/h_ikki">
-                    <img src="/buttons/h_ikki.gif" alt="my f'd up alter ego">
+                <a href="https://omori-game.com">
+                    <img src="/img/omori.gif" alt="OMORI">
                 </a>
             </div>
         </div>
-    </div>
-    <nav class="centered" hidden>
-        <a href="/__for_SUNNY__.txt" style="color: rgba(255, 255, 255, 0);"></a>
-        <!--=`8F8/hS8LDfm14Dfol,DC9NKBOQ'q+CoD.AKY]//db0l+Eq78+EMI<ATVU"DJ()$AS>dqA0?/9FY5:!+Eq78DC9NKBllQH=`8F1Eb-A%+D5V2A0>i&EcZ/:/0Ikk:/4qE+A!\kDJs_AH#IgQEb-A%+D5V2A0>i&EcZ/:+UULXB5_^!+E1n4F)Pq=GAhV?A8Wc:+CoC5F)Po,FD,B+B-;#)CLnW1BOQ!8/hR-->
-    </nav>
-    <script src="/res/libnowplaying.js"></script>
-    <script src="/res/main.js"></script>
+
+        <div class="ui-box glass">
+            <p class="ui-text-header-subtitle ui-text-centered">
+                made by eldritchT with love
+                <b>&gt;w&lt;</b><br />
+            </p>
+        </div>
+    </main>
 </body>
 
 </html>
-
-<!--
-Dymka will remember this...
--->
