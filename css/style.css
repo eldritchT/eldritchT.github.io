@@ -32,13 +32,13 @@ body {
 }
 
 main {
-    max-width: 500px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
 main * {
-    animation: fadeIn 1s ease-out;
+    animation: fadeIn 1s ease-in-out;
 }
 
 a {
@@ -46,8 +46,13 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .glass {
-    border: 1px solid #ffffff2d;
+    border: 1px solid #ffffff09;
     border-radius: 7px;
     background: #ffffff0c;
     backdrop-filter: blur(3px);
@@ -113,6 +118,10 @@ a {
     font-size: 16px;
 }
 
+.ui-text-hidden {
+    color: #ffffff00;
+}
+
 .ui-margin-small * {
     margin-bottom: 3px;
 }
@@ -129,4 +138,28 @@ a {
 
 .ui-badgelist p {
     margin: 5px;
+}
+
+.ui-text-white {
+    color: #ffffff;
+}
+
+.ui-text-red {
+    color: #ff9e9e;
+}
+
+.ui-text-yellow {
+    color: #fff59e;
+}
+
+.ui-text-green {
+    color: #9effb6;
+}
+
+.ui-text-cyan {
+    color: #68ffd2;
+}
+
+.ui-text-blue {
+    color: #a89eff;
 }
