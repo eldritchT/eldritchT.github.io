@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="me" href="https://mastodon.ml/@eldritchT">
     <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/widget/lastfm.js" type="module"></script>
+    <link rel="stylesheet" href="/widget/tracks.css">
+    <link rel="stylesheet" href="/css/tracks-custom.css">
 </head>
 
 <body>
@@ -41,10 +44,17 @@
         </div>
 
         <div class="ui-box glass">
+            <p class="ui-text-header-title">last.fm</p>
+            <nav class="ui-text-header-subtitle ui-margin-small">
+                <lastfm-tracks interval="35" user="nee96" apikey="e69f7734b335b8e0f21f882e05bf1fe8">
+                </lastfm-tracks>
+            </nav>
+        </div>
+        
+        <div class="ui-box glass">
             <p class="ui-text-header-title">media</p>
             <nav class="ui-text-header-subtitle ui-margin-small ui-button-list">
                 <a href="https://github.com/eldritchT" class="glass ui-animated ui-button">github</a>
-                <a href="https://last.fm/user/nee96" class="glass ui-animated ui-button">last.fm</a>
                 <a href="https://steamcommunity.com/id/eldritch_T" class="glass ui-animated ui-button">steam</a>
             </nav>
         </div>
